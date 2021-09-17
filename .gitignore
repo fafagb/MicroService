@@ -1,0 +1,10 @@
+AggregateService/bin
+AggregateService/obj
+AggregateService/logs
+MemberService/bin
+MemberService/obj
+MemberService/logs
+TeamService/bin
+TeamService/obj
+TeamService/logs
+.vs

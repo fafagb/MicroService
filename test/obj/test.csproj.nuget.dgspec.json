@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {}
+    "D:\\mywork\\github\\MicrosoftService\\test\\test.csproj": {}
   },
   "projects": {
-    "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {
+    "D:\\mywork\\github\\MicrosoftService\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
-        "projectName": "TeamService",
-        "projectPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
+        "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\test\\test.csproj",
+        "projectName": "test",
+        "projectPath": "D:\\mywork\\github\\MicrosoftService\\test\\test.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\obj\\",
+        "outputPath": "D:\\mywork\\github\\MicrosoftService\\test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,20 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Consul": {
-              "target": "Package",
-              "version": "[1.6.1, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.13, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
