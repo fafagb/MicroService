@@ -30,6 +30,7 @@ namespace TeamService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
              // 1、注册上下文到IOC容器
             services.AddDbContext<TeamContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
@@ -39,7 +40,15 @@ namespace TeamService
 
             // 3、注册团队仓储
             services.AddScoped<ITeamRepository, TeamRepository>();
+
+             // 4、添加映射
+          //  services.AddAutoMapper();
+
+              // 5、添加服务注册条件
+          //  services.AddConsulRegistry(Configuration);
+
             services.AddControllers();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -644,11 +644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
+      "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
       "projectName": "AggregateService",
-      "projectPath": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
+      "projectPath": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\obj\\",
+      "outputPath": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -662,6 +662,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.hexfuture.com/nuget/HexFutureMicroService": {},
         "http://www.gaokaoyun.net/RiCommon/nuget": {},
         "https://www.nuget.org/api/v2/": {}
       },
