@@ -14,7 +14,7 @@ using TeamService.Context;
 using TeamService.Services;
 using TeamService.Repositories;
 using Microsoft.EntityFrameworkCore;
-
+using MicrosoftServiceCore.Registry.Extentions;
 
 namespace TeamService
 {
@@ -45,7 +45,7 @@ namespace TeamService
           //  services.AddAutoMapper();
 
               // 5、添加服务注册条件
-          //  services.AddConsulRegistry(Configuration);
+            services.AddConsulRegistry(Configuration);
 
             services.AddControllers();
             
@@ -58,6 +58,8 @@ namespace TeamService
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseConsulRegistry();
 
             app.UseHttpsRedirection();
 

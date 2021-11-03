@@ -1,26 +1,22 @@
 using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using MicrosoftServiceCore.Cluster;
 using MicrosoftServiceCore.Registry;
-using System.Net.Http;
-using System.Net;
 using Newtonsoft.Json;
 
 namespace MicrosoftServiceCore.HttpClientConsul {
 
-      
-     
-
     public class ConsulHttpClient {
 
- private readonly IServiceDiscovery serviceDiscovery;
+        private readonly IServiceDiscovery serviceDiscovery;
         private readonly ILoadBalance loadBalance;
         private readonly IHttpClientFactory httpClientFactory;
-        public ConsulHttpClient(IServiceDiscovery serviceDiscovery,
-                                    ILoadBalance loadBalance,
-                                    IHttpClientFactory httpClientFactory)
-        {
+        public ConsulHttpClient (IServiceDiscovery serviceDiscovery,
+            ILoadBalance loadBalance,
+            IHttpClientFactory httpClientFactory) {
             this.serviceDiscovery = serviceDiscovery;
             this.loadBalance = loadBalance;
             this.httpClientFactory = httpClientFactory;
@@ -30,7 +26,7 @@ namespace MicrosoftServiceCore.HttpClientConsul {
         /// Get方法
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// param name="ServiceSchme">服务名称:(http/https)</param>
+        /// param name="ServiceSchme">服务协议:(http/https)</param>
         /// <param name="ServiceName">服务名称</param>
         /// <param name="serviceLink">服务路径</param>
         /// <returns></returns>
