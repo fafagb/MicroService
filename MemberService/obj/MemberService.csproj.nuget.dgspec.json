@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj": {}
+    "D:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj": {}
   },
   "projects": {
-    "d:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj": {
+    "D:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj",
+        "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj",
         "projectName": "MemberService",
-        "projectPath": "d:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj",
+        "projectPath": "D:\\mywork\\github\\MicrosoftService\\MemberService\\MemberService.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "d:\\mywork\\github\\MicrosoftService\\MemberService\\obj\\",
+        "outputPath": "D:\\mywork\\github\\MicrosoftService\\MemberService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

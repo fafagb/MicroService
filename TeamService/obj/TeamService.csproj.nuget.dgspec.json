@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {}
+    "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {}
   },
   "projects": {
-    "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
+    "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj",
+        "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj",
         "projectName": "MicrosoftServiceCore",
-        "projectPath": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj",
+        "projectPath": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\obj\\",
+        "outputPath": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -103,14 +103,14 @@
         }
       }
     },
-    "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {
+    "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
+        "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
         "projectName": "TeamService",
-        "projectPath": "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
+        "projectPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "d:\\mywork\\github\\MicrosoftService\\TeamService\\obj\\",
+        "outputPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -131,8 +131,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
-                "projectPath": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
+              "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
+                "projectPath": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
               }
             }
           }
@@ -150,17 +150,23 @@
               "target": "Package",
               "version": "[1.6.1, )"
             },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.3.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.13, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [

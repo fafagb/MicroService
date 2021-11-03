@@ -16,7 +16,7 @@ namespace MicrosoftServiceCore.Registry.Extentions
         public static IServiceCollection AddConsulRegistry(this IServiceCollection services, IConfiguration configuration)
         {
             // 1、加载Consul服务注册配置
-            ServiceRegistryConfig serviceRegistryConfig=new ServiceRegistryConfig();
+          
             services.Configure<ServiceRegistryConfig>(configuration.GetSection("ConsulRegistry"));
           //  services.Configure<ServiceRegistryConfig>("",x=>{x.Address="";});
 

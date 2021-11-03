@@ -31,7 +31,7 @@ namespace TeamService.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Team>> GetTeams()
         {
-            Thread.Sleep(10000000);
+          //  Thread.Sleep(10000000);
             return teamService.GetTeams().ToList();
         }
 

@@ -10,12 +10,14 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/MicrosoftServiceCore/bin/Debug/netcoreapp3.1/MicrosoftServiceCore.dll",
+            "program": "${workspaceFolder}/TeamService/bin/Debug/netcoreapp3.1/TeamService.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/MicrosoftServiceCore",
+            "cwd": "${workspaceFolder}/TeamService",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+
+           
         },
         {
             "name": ".NET Core Attach",

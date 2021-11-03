@@ -26,13 +26,13 @@ namespace AggregateService.Services
         private readonly ConsulHttpClient consulHttpClient;
         public HttpTeamServiceClient(/*IServiceDiscovery serviceDiscovery, 
                                     ILoadBalance loadBalance,*/
-                                    IHttpClientFactory httpClientFactory/*,
-                                    ConsulHttpClient consulHttpClient*/)
+                                    IHttpClientFactory httpClientFactory,
+                                    ConsulHttpClient consulHttpClient)
         {
             /*this.serviceDiscovery = serviceDiscovery;
             this.loadBalance = loadBalance;*/
             this.httpClientFactory = httpClientFactory;
-            //this.consulHttpClient = consulHttpClient;
+            this.consulHttpClient = consulHttpClient;
         }
 
         public async Task<IList<Team>> GetTeams()
@@ -75,7 +75,7 @@ namespace AggregateService.Services
             
           List<Team> teams = await consulHttpClient.GetAsync<List<Team>>(ServiceSchme, ServiceName, ServiceLink);
 
-            return null;
+            return teams;
         }
 
        

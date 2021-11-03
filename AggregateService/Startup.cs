@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AggregateService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,8 +28,9 @@ namespace AggregateService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-    
-         services.AddHttpClientConsul<ConsulHttpClient>();
+
+            services.AddHttpClient().AddHttpClientConsul<ConsulHttpClient>();
+            services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient>();
             services.AddControllers();
     
         }
@@ -42,7 +44,7 @@ namespace AggregateService
                 app.UseDeveloperExceptionPage();
             }
             
-            app.UseHttpsRedirection();
+         //   app.UseHttpsRedirection();
 
             app.UseRouting();
 
