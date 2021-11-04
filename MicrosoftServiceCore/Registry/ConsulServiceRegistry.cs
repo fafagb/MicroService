@@ -52,7 +52,7 @@ namespace MicrosoftServiceCore.Registry
             consulClient.Agent.ServiceRegister(registration).Wait();
 
             // 5、关闭连接
-          //  consulClient.Dispose();
+            consulClient.Dispose();
         }
 
         /// <summary>
