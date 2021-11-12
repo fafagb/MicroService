@@ -8502,11 +8502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
+      "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
       "projectName": "TeamService",
-      "projectPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
+      "projectPath": "d:\\mywork\\github\\MicrosoftService\\TeamService\\TeamService.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\mywork\\github\\MicrosoftService\\TeamService\\obj\\",
+      "outputPath": "d:\\mywork\\github\\MicrosoftService\\TeamService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8527,8 +8527,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
-              "projectPath": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
+            "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
+              "projectPath": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
             }
           }
         }

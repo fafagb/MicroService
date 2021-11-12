@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MicrosoftServiceCore.HttpClientConsul;
+using MicrosoftServiceCore.HttpClientPolly;
 using MicrosoftServiceCore.Registry.Extentions;
 
 namespace AggregateService
@@ -32,7 +33,7 @@ namespace AggregateService
             services.AddHttpClient().AddHttpClientConsul<ConsulHttpClient>();
             services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient>();
             services.AddControllers();
-    
+            services.AddPollyHttpClient("teamservice",x=>{x.CircuitBreakerDownTime=30;x.CircuitBreakerOpenFallCount=8;x.RetryCount=3;x.TimeoutTime=60;});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
