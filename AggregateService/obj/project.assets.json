@@ -5220,11 +5220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
+      "projectUniqueName": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
       "projectName": "AggregateService",
-      "projectPath": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
+      "projectPath": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\AggregateService.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "d:\\mywork\\github\\MicrosoftService\\AggregateService\\obj\\",
+      "outputPath": "D:\\mywork\\github\\MicrosoftService\\AggregateService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5245,8 +5245,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
-              "projectPath": "d:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
+            "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj": {
+              "projectPath": "D:\\mywork\\github\\MicrosoftService\\MicrosoftServiceCore\\MicrosoftServiceCore.csproj"
             }
           }
         }
