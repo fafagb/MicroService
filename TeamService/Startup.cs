@@ -46,7 +46,7 @@ namespace TeamService
 
               // 5、添加服务注册条件
             services.AddConsulRegistry(Configuration);
-
+            //注册controller
             services.AddControllers();
             
         }
