@@ -11,9 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MicrosoftServiceCore.HttpClientConsul;
-using MicrosoftServiceCore.HttpClientPolly;
-using MicrosoftServiceCore.Registry.Extentions;
+using MicroServiceCore.HttpClientConsul;
+using MicroServiceCore.HttpClientPolly;
+using MicroServiceCore.Registry.Extentions;
 
 namespace AggregateService {
     public class Startup {

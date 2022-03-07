@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicrosoftServiceCore.Registry
+namespace MicroServiceCore.Registry
 {
    /// <summary>
    /// 服务注册节点

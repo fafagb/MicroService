@@ -1,9 +1,9 @@
-﻿using MicrosoftServiceCore.Registry;
+﻿using MicroServiceCore.Registry;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicrosoftServiceCore.Cluster
+namespace MicroServiceCore.Cluster
 {
     /// <summary>
     /// 负载均衡抽象实现

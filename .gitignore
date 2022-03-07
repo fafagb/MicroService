@@ -7,7 +7,7 @@ MemberService/logs
 TeamService/bin
 TeamService/obj
 TeamService/logs
-MicrosoftServiceCore/bin
-MicrosoftServiceCore/logs
-MicrosoftServiceCore/obj
+MicroServiceCore/bin
+MicroServiceCore/logs
+MicroServiceCore/obj
 .vs

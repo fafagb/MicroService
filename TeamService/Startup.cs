@@ -14,7 +14,7 @@ using TeamService.Context;
 using TeamService.Services;
 using TeamService.Repositories;
 using Microsoft.EntityFrameworkCore;
-using MicrosoftServiceCore.Registry.Extentions;
+using MicroServiceCore.Registry.Extentions;
 
 namespace TeamService
 {

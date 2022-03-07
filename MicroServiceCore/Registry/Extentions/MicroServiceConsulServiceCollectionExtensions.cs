@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MicrosoftServiceCore.Cluster;
+using MicroServiceCore.Cluster;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicrosoftServiceCore.Registry.Extentions
+namespace MicroServiceCore.Registry.Extentions
 {
     /// <summary>
     /// Console 注册中心扩展(加载配置)

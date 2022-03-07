@@ -1,6 +1,6 @@
 using System;
 
-namespace MicrosoftServiceCore.Registry {
+namespace MicroServiceCore.Registry {
     public interface IServiceRegistry {
         /// <summary>
         /// 注册服务

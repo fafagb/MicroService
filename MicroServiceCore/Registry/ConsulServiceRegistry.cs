@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicrosoftServiceCore.Registry
+namespace MicroServiceCore.Registry
 {
     /// <summary>
     /// consul服务注册实现

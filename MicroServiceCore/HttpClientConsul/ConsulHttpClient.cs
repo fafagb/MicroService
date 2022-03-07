@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using MicrosoftServiceCore.Cluster;
-using MicrosoftServiceCore.Registry;
+using MicroServiceCore.Cluster;
+using MicroServiceCore.Registry;
 using Newtonsoft.Json;
 
-namespace MicrosoftServiceCore.HttpClientConsul {
+namespace MicroServiceCore.HttpClientConsul {
 
     public class ConsulHttpClient {
 

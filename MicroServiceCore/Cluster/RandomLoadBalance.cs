@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading;
-using MicrosoftServiceCore.Registry;
+using MicroServiceCore.Registry;
 
-namespace MicrosoftServiceCore.Cluster
+namespace MicroServiceCore.Cluster
 {
     /// <summary>
     /// 随机负载均衡

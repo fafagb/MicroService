@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.AccessControl;
 
-namespace MicrosoftServiceCore {
+namespace MicroServiceCore {
 
     class Program {
 

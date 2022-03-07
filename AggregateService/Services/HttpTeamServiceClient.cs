@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using AggregateService.Models;
-using MicrosoftServiceCore.HttpClientConsul;
+using MicroServiceCore.HttpClientConsul;
 using Newtonsoft.Json;
 
 namespace AggregateService.Services

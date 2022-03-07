@@ -6,7 +6,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MicrosoftServiceCore\MicrosoftServiceCore.csproj"/>
+    <ProjectReference Include="..\MicroServiceCore\MicroServiceCore.csproj"/>
   </ItemGroup>
 
 </Project>

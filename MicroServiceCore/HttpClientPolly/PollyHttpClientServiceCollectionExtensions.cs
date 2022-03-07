@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Polly;
-using MicrosoftServiceCore.HttpClientPolic;
+using MicroServiceCore.HttpClientPolic;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicrosoftServiceCore.HttpClientPolly
+namespace MicroServiceCore.HttpClientPolly
 {
    /// <summary>
    /// 微服务中HttpClient熔断，降级策略扩展

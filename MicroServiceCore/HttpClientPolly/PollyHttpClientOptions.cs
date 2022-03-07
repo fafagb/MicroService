@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Text;
 
-namespace MicrosoftServiceCore.HttpClientPolic
+namespace MicroServiceCore.HttpClientPolic
 {
     /// <summary>
     /// HttpClient熔断降级策略选项

@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
 using System.Text;
-using MicrosoftServiceCore.Registry;
+using MicroServiceCore.Registry;
 
-namespace MicrosoftServiceCore.Cluster {
+namespace MicroServiceCore.Cluster {
     /// <summary>
     /// 服务负载均衡
     /// </summary>
