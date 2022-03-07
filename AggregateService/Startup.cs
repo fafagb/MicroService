@@ -15,45 +15,38 @@ using MicrosoftServiceCore.HttpClientConsul;
 using MicrosoftServiceCore.HttpClientPolly;
 using MicrosoftServiceCore.Registry.Extentions;
 
-namespace AggregateService
-{
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
+namespace AggregateService {
+    public class Startup {
+        public Startup (IConfiguration configuration) {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
+        public void ConfigureServices (IServiceCollection services) {
 
-            services.AddHttpClient().AddHttpClientConsul<ConsulHttpClient>();
-            services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient>();
-            services.AddControllers();
-            services.AddPollyHttpClient("teamservice",x=>{x.CircuitBreakerDownTime=30;x.CircuitBreakerOpenFallCount=8;x.RetryCount=3;x.TimeoutTime=60;});
+            services.AddHttpClient ().AddHttpClientConsul<ConsulHttpClient> ();
+            services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient> ();
+            services.AddControllers ();
+            services.AddPollyHttpClient ("teamservice", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 8; x.RetryCount = 3; x.TimeoutTime = 60; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-        
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
+        public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
+
+            if (env.IsDevelopment ()) {
+                app.UseDeveloperExceptionPage ();
             }
-            
-         //   app.UseHttpsRedirection();
 
-            app.UseRouting();
+            //   app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            app.UseRouting ();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
+            app.UseAuthorization ();
+
+            app.UseEndpoints (endpoints => {
+                endpoints.MapControllers ();
             });
         }
     }
