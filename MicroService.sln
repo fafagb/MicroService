@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemberService", "MemberServ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamService", "TeamService\TeamService.csproj", "{0FC6BC59-9290-454C-87E7-EB6FDC17FFC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftServiceCore", "MicrosoftServiceCore\MicrosoftServiceCore.csproj", "{2CD1CCFF-68DF-44CA-A569-D4E25A5F22EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServiceCore", "MicroServiceCore\MicroServiceCore.csproj", "{2CD1CCFF-68DF-44CA-A569-D4E25A5F22EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
