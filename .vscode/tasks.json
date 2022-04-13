@@ -7,36 +7,24 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MicroServiceCore/MicroServiceCore.csproj",
+                "${workspaceFolder}/AggregateService/AggregateService.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
+            "label": "build",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MicroServiceCore/MicroServiceCore.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "${workspaceFolder}/MicroServiceCore/MicroServiceCore.csproj",
+                "${workspaceFolder}/TeamService/TeamService.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         }
+       
     ]
 }
