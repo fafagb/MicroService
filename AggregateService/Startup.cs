@@ -29,7 +29,7 @@ namespace AggregateService {
             services.AddHttpClient ().AddHttpClientConsul<ConsulHttpClient> ();
             services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient> ();
             services.AddControllers ();
-            services.AddPollyHttpClient ("teamservice", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 8; x.RetryCount = 3; x.TimeoutTime = 60; });
+            services.AddPollyHttpClient ("micro", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 2; x.RetryCount = 3; x.TimeoutTime = 60; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

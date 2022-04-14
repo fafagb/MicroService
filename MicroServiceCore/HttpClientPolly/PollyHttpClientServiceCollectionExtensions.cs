@@ -28,6 +28,9 @@ namespace MicroServiceCore.HttpClientPolly
             PollyHttpClientOptions options = new PollyHttpClientOptions();
             action(options);
 
+
+            var fallBackResponse
+
             // 2、配置httpClient,熔断降级策略
             services.AddHttpClient(name)
            //1.1 降级策略
