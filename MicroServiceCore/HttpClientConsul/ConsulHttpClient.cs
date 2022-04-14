@@ -38,7 +38,7 @@ namespace MicroServiceCore.HttpClientConsul {
             ServiceUrl serviceUrl = loadBalance.Select (serviceUrls);
 
             // 3、建立请求
-            HttpClient httpClient = httpClientFactory.CreateClient ("mrico");
+            HttpClient httpClient = httpClientFactory.CreateClient ("micro");
             HttpResponseMessage response = await httpClient.GetAsync (serviceUrl.Url + serviceLink);
 
             // 3.1json转换成对象

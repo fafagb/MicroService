@@ -13,7 +13,7 @@ namespace MicroServiceCore.Cluster
         public ServiceUrl Select(IList<ServiceUrl> serviceUrls)
         {
             if (serviceUrls == null || serviceUrls.Count ==0)
-                return null;
+                return new ServiceUrl() {  Url="http://localhost:3333"};
             if (serviceUrls.Count == 1)
                 return serviceUrls[0];
             return DoSelect(serviceUrls);
