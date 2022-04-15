@@ -50,7 +50,7 @@ namespace MicroServiceCore.HttpClientPolly
             .AddPolicyHandler(Policy<HttpResponseMessage>.Handle<Exception>().CircuitBreakerAsync(options.CircuitBreakerOpenFallCount, TimeSpan.FromSeconds(options.CircuitBreakerDownTime), (ex, ts) => {
                 Console.WriteLine($"服务{name}断路器开启，异常消息：{ex.Exception.Message}");
                 Console.WriteLine($"服务{name}断路器开启时间：{ts.TotalSeconds}s");
-            }, () => {
+            },() => {
                 Console.WriteLine($"服务{name}断路器关闭");
             }, () => {
                 Console.WriteLine($"服务{name}断路器半开启(时间控制，自动开关)");

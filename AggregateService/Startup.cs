@@ -29,6 +29,7 @@ namespace AggregateService {
             services.AddHttpClient ().AddHttpClientConsul<ConsulHttpClient> ();
             services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient> ();
             services.AddControllers ();
+            //这个地方的micro是重点，名字不对polly不会生效
             services.AddPollyHttpClient ("micro", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 2; x.RetryCount = 3; x.TimeoutTime = 60; });
         }
 

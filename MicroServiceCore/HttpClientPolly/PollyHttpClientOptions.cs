@@ -34,4 +34,9 @@ namespace MicroServiceCore.HttpClientPolic
         /// </summary>
         public HttpResponseMessage httpResponseMessage { set; get; }
     }
+
+
+
+
+
 }
