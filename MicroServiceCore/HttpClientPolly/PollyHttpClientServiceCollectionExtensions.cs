@@ -29,11 +29,7 @@ namespace MicroServiceCore.HttpClientPolly
             action(options);
 
 
-            var fallBackResponse = new HttpResponseMessage
-            {
-                Content = new StringContent("自定义异常"),
-                 StatusCode=System.Net.HttpStatusCode.GatewayTimeout
-            };
+          
 
             // 2、配置httpClient,熔断降级策略
             services.AddHttpClient(name)

@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using MicroServiceCore.HttpClientConsul;
 using MicroServiceCore.HttpClientPolly;
 using MicroServiceCore.Registry.Extentions;
+using System.Net.Http;
 
 namespace AggregateService {
     public class Startup {
@@ -29,8 +30,15 @@ namespace AggregateService {
             services.AddHttpClient ().AddHttpClientConsul<ConsulHttpClient> ();
             services.AddSingleton<ITeamServiceClient, HttpTeamServiceClient> ();
             services.AddControllers ();
+
+       
             //这个地方的micro是重点，名字不对polly不会生效
-            services.AddPollyHttpClient ("micro", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 2; x.RetryCount = 3; x.TimeoutTime = 60; });
+            services.AddPollyHttpClient ("micro", x => { x.CircuitBreakerDownTime = 30; x.CircuitBreakerOpenFallCount = 2; x.RetryCount = 3; x.TimeoutTime = 60; x.httpResponseMessage= new HttpResponseMessage
+            {
+                Content = new StringContent("自定义异常"),
+                StatusCode = System.Net.HttpStatusCode.GatewayTimeout
+            };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
