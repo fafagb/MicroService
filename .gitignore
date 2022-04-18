@@ -10,4 +10,6 @@ TeamService/logs
 MicroServiceCore/bin
 MicroServiceCore/logs
 MicroServiceCore/obj
+MicroServiceGateway/bin
+MicroServiceGateway/obj
 .vs
